@@ -18,7 +18,30 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--header-background-color);
-  padding: 1em;
+  padding: 2em;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+}
+
+button {
+  border: none;
+  background-color: var(--header-background-color);
+  color: var(--background-color);
+  font-size: 1.2em;
+}
+
+/* Add a border bottom to the button that is active and keep it there */
+button:hover {
+  border-bottom: 2px solid var(--background-color);
+  border-radius: 0;
+}
+
+button[active="true"] {
+  border-bottom: 2px solid var(--background-color);
+  border-radius: 0;
 }
 
 #content {
