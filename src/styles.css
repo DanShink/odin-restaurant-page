@@ -1,0 +1,38 @@
+:root {
+  --background-color: #FEFAE0;
+  --text-color: #606C38;
+  --header-background-color: #283618;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+header {
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-background-color);
+  padding: 1em;
+}
+
+#content {
+  grid-row: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  grid-row: 3 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-background-color);
+  color: var(--background-color);
+}
