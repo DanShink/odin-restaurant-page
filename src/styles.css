@@ -59,6 +59,7 @@ button[active="true"] {
   color: var(--header-background-color);
   border-radius: 20px;
   padding: 2em;
+  overflow-y: auto;
 }
 
 .menu-item {
