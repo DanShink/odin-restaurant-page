@@ -1,7 +1,9 @@
 :root {
-  --background-color: #FEFAE0;
+  --content-background-color: #FEFAE0;
   --text-color: #606C38;
+  --text-header-color: #FEFAE0;
   --header-background-color: #283618;
+  --background-color: #BC6C25;
 }
 
 body {
@@ -29,7 +31,7 @@ nav {
 button {
   border: none;
   background-color: var(--header-background-color);
-  color: var(--background-color);
+  color: var(--text-header-color);
   font-size: 1.2em;
 }
 
@@ -49,6 +51,13 @@ button[active="true"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2em;
+  justify-self: center;
+  text-align: center;
+  width: clamp(300px, 80%, 1200px);
+  background-color: var(--content-background-color);
+  color: var(--header-background-color);
+  border-radius: 20px;
 }
 
 footer {
@@ -57,5 +66,5 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: var(--header-background-color);
-  color: var(--background-color);
+  color: var(--text-header-color);
 }
